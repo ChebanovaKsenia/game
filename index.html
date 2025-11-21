@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Limon and girl</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Главное меню -->
+  <div id="main-menu">
+    <h1>Limon and girl</h1>
+    <ul>
+      <li>Управление: WASD</li>
+      <li>Собери 50 лимонов, чтобы победить!</li>
+      <li>После 10 лимонов за тобой начнёт гнаться враг.</li>
+      <li>Не дай ему тебя поймать!</li>
+    </ul>
+    <button id="start-btn">Играть</button>
+  </div>
+
+  <!-- Игровое поле -->
+  <div id="game-container" style="display: none;">
+    <div id="score">Лимоны: 0</div>
+    <canvas id="gameCanvas" width="1000" height="800"></canvas>
+  </div>
+  
+  <div id="game-over" style="display: none;">
+    <h2 id="game-result">Игра окончена!</h2>
+    <button id="restart-btn">Сыграть ещё раз</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
